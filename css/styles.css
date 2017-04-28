@@ -1,5 +1,5 @@
-#design, #php, #ruby, #quiz, #findout {
-  /*display: none;*/
+#design, #php, #ruby, #quiz, #findout, .img {
+  display: none;
 }
 
 /*Header*/
@@ -78,7 +78,7 @@ form#quiz {
 }
 
 .question2, .question3, .question4, .question5 {
-  /*display: none;*/
+  display: none;
   margin-top: 20px;
 }
 
@@ -112,4 +112,8 @@ img#design-symbol {
   margin-right: 15px;
   margin-top: 15px;
   margin-left: 3px;
+}
+
+a {
+  color: #00b3b4;
 }
