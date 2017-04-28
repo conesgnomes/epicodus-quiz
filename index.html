@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:700|Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:700|Varela+Round" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Which Epicodus track to pick</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <img class="epicodus pull-right" src="img/epicodus_logo.png" alt="Epicodus logo"/>
-      <h1>WHICH EPICODUS TRACK SHOULD I TAKE?</h1>
+    <div class="header">
+      <!-- <img class="epicodus pull-right" src="img/epicodus_logo.png" alt="Epicodus logo"/> -->
+      <h1><span class="border">WHICH EPICODUS TRACK SHOULD I TAKE?</span></h1>
+    </div>
+    <div class="padding-left">
       <h2>Complete the short quiz below to get a recommendation for which track at Epicodus is right for you.</h2>
+      <button id="begin" type="submit" name="begin">Click to begin</button>
       <form id="quiz">
         <div class="question1">
           <label class="question-text" for="question1">Are aesthetics and functionality concepts you enjoy thinking about?</label>
@@ -108,7 +111,7 @@
             </label>
           </div>
         </div>
-        <button type="submit" name="button">Find out!</button>
+        <button id="findout" type="submit" name="submit">Find out!</button>
       </form>
       <h3 id="design">You should join CSS/Design! Your propensity for aesthetics and user experience make you perfect for this track.</h3>
       <h3 id="php">You should join PHP! Your desire to work for a company or agency creating sites for brands and organizations make you perfect for this track.</h3>
