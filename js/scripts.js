@@ -7,19 +7,19 @@ $(function() {
     var question5 = $("input:radio[name=question5]:checked").val();
 
     if(question1 === "yes" || question3 === "ux") {
-      $("#design").show();
+      $("#design").fadeIn(700);
       $("#php").hide();
       $("#ruby").hide();
     }
     else if (question1 === "no" && (question3 === "content" || question3 === "ux")) {
       $("#design").hide();
-      $("#php").show();
+      $("#php").fadeIn(700);
       $("#ruby").hide();
     }
     else if (question1 === "no" && (question3 === "interactive" || question3 === "ux")) {
       $("#design").hide();
       $("#php").hide();
-      $("#ruby").show();
+      $("#ruby").fadeIn(700);
     }
 
     event.preventDefault();

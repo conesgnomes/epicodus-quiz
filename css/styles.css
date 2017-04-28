@@ -1,3 +1,23 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 #design, #php, #ruby {
   display: none;
+}
+
+.epicodus {
+  height: 80px;
+}
+
+h1 {
+  font-family: 'Varela Round', sans-serif;
+  /*display: inline-block;*/
+
+
+}
+
+.question-text {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
 }
