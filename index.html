@@ -12,9 +12,9 @@
   <body>
     <div class="header">
       <!-- <img class="epicodus pull-right" src="img/epicodus_logo.png" alt="Epicodus logo"/> -->
-      <h1><span class="border">WHICH EPICODUS TRACK SHOULD I TAKE?</span></h1>
+      <h1><span class="head-border">WHICH EPICODUS TRACK SHOULD I JOIN?</span></h1>
     </div>
-    <div class="padding-left">
+    <div class="banner-padding">
       <h2>Complete the short quiz below to get a recommendation for which track at Epicodus is right for you.</h2>
       <button id="begin" type="submit" name="begin">Click to begin</button>
       <form id="quiz">
@@ -22,7 +22,7 @@
           <label class="question-text" for="question1">Are aesthetics and functionality concepts you enjoy thinking about?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="question1" value="yes" checked>
+              <input type="radio" name="question1" value="yes">
               Yes
             </label>
           </div>
@@ -37,7 +37,7 @@
           <label class="question-text" for="question2">What is your ideal work environment?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="question2" value="large" checked>
+              <input type="radio" name="question2" value="large">
               Large Company
             </label>
           </div>
@@ -64,7 +64,7 @@
           <label class="question-text" for="question3">What kind of projects do you want to work on?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="question3" value="interactive" checked>
+              <input type="radio" name="question3" value="interactive">
               Interactive web applications
             </label>
           </div>
@@ -85,7 +85,7 @@
           <label class="question-text" for="question4">Do you enjoy testing the new or tend to favor the tried and true?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="question4" value="latest" checked>
+              <input type="radio" name="question4" value="latest">
               I like to be on top of the latest trends
             </label>
           </div>
@@ -100,7 +100,7 @@
           <label class="question-text" for="question5">Do you enjoy testing the new or tend to favor the tried and true?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="question5" value="challenge" checked>
+              <input type="radio" name="question5" value="challenge">
               I can handle an initial challenge - work upfront pays off in the end anyway
             </label>
           </div>
@@ -113,9 +113,12 @@
         </div>
         <button id="findout" type="submit" name="submit">Find out!</button>
       </form>
-      <h3 id="design">You should join CSS/Design! Your propensity for aesthetics and user experience make you perfect for this track.</h3>
-      <h3 id="php">You should join PHP! Your desire to work for a company or agency creating sites for brands and organizations make you perfect for this track.</h3>
-      <h3 id="ruby">You should join Ruby! Your desire to build interactive web applications and ability to take on a learning challege make you perfect for this track.</h3>
+      <img id="design-symbol" src="img/design.png" alt="Design symbol" />
+      <h2 class="answer" id="design">You should join CSS/Design! Your propensity for aesthetics and user experience make you perfect for this track.</h2>
+      <img id="php-symbol" src="img/php.png" alt="PHP symbol" />
+      <h2 class="answer" id="php">You should join PHP! Your desire to work for a company or agency creating sites for brands and organizations make you perfect for this track.</h2>
+      <img id="ruby-symbol" src="img/ruby.png" alt="Ruby symbol" />
+      <h2 class="answer" id="ruby">You should join Ruby! Your desire to build interactive web applications and ability to take on a learning challege make you perfect for this track.</h2>
     </div>
   </body>
 </html>

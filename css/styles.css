@@ -1,10 +1,8 @@
-body {
-  /*font-family: 'Roboto', sans-serif;*/
+#design, #php, #ruby, #quiz, #findout {
+  /*display: none;*/
 }
 
-#design, #php, #ruby, #quiz {
-  display: none;
-}
+/*Header*/
 
 .epicodus {
   height: 80px;
@@ -16,7 +14,7 @@ h1 {
   color: white;
 }
 
-h2 {
+h2, .answer {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
@@ -25,7 +23,7 @@ h2 {
 
 }
 
-.border {
+.head-border {
   border: solid 3px white;
   border-radius: 10px;
   padding: 15px;
@@ -41,9 +39,11 @@ h2 {
   text-align: center;
 }
 
-.padding-left {
+.banner-padding {
   padding-left: 15px;
 }
+
+/*Quiz*/
 
 .question-text {
   font-family: 'Open Sans', sans-serif;
@@ -67,4 +67,49 @@ button {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+button {
+  margin-top: 15px;
+}
+
+form#quiz {
+  margin-top: 20px;
+}
+
+.question2, .question3, .question4, .question5 {
+  /*display: none;*/
+  margin-top: 20px;
+}
+
+/*Answers*/
+
+.answer {
+  line-height: 30px;
+}
+
+img#php-symbol {
+  height: 50px;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+img#ruby-symbol {
+  height: 40px;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+img#design-symbol {
+  height: 45px;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-left: 3px;
 }

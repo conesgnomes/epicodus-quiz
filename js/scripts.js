@@ -1,8 +1,26 @@
 $(function() {
   $("button#begin").click(function(event) {
-    $("#quiz").fadeIn(700);
+    $("#quiz").fadeIn(500);
     $("button#begin").hide();
     $("h2").hide();
+  });
+});
+
+$(function() {
+  $(".question1").click(function(event) {
+    $(".question2").fadeIn(500);
+  });
+  $(".question2").click(function(event) {
+    $(".question3").fadeIn(500);
+  });
+  $(".question3").click(function(event) {
+    $(".question4").fadeIn(500);
+  });
+  $(".question4").click(function(event) {
+    $(".question5").fadeIn(500);
+  });
+  $(".question5").click(function(event) {
+    $("button#findout").fadeIn(500);
   });
 });
 
@@ -15,19 +33,19 @@ $(function() {
     var question5 = $("input:radio[name=question5]:checked").val();
 
     if(question1 === "yes" || question3 === "ux") {
-      $("#design").fadeIn(700);
+      $("#design").fadeIn(500);
       $("#php").hide();
       $("#ruby").hide();
     }
     else if (question1 === "no" && (question3 === "content" || question3 === "ux")) {
       $("#design").hide();
-      $("#php").fadeIn(700);
+      $("#php").fadeIn(500);
       $("#ruby").hide();
     }
     else if (question1 === "no" && (question3 === "interactive" || question3 === "ux")) {
       $("#design").hide();
       $("#php").hide();
-      $("#ruby").fadeIn(700);
+      $("#ruby").fadeIn(500);
     }
 
     event.preventDefault();
