@@ -18,7 +18,7 @@ _This requires a desktop and a web browser._
 
 ## Known Bugs
 
-_I was unable to get the track symbols (which have been commented out) to fade in with JS transitions._
+_There are no known bugs in this application._
 
 ## Support and contact details
 
