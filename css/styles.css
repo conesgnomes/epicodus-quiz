@@ -1,13 +1,8 @@
-#design, #php, #ruby, #quiz, #findout, .img {
+#design, #php, #ruby, #quiz, #findout, img#php-symbol, img#design-symbol, img#ruby-symbol {
   display: none;
 }
 
 /*Header*/
-
-.epicodus {
-  height: 80px;
-
-}
 
 h1 {
   font-family: 'Varela Round', sans-serif;
@@ -85,21 +80,22 @@ form#quiz {
 /*Answers*/
 
 .answer {
+  display: flex;
+  align-items: center;
+}
+
+.answer h2 {
   line-height: 30px;
 }
 
 img#php-symbol {
   height: 50px;
-  display: inline-block;
-  float: left;
   margin-right: 15px;
   margin-top: 15px;
 }
 
 img#ruby-symbol {
   height: 40px;
-  display: inline-block;
-  float: left;
   margin-right: 20px;
   margin-top: 20px;
   margin-left: 10px;
@@ -107,8 +103,6 @@ img#ruby-symbol {
 
 img#design-symbol {
   height: 45px;
-  display: inline-block;
-  float: left;
   margin-right: 15px;
   margin-top: 15px;
   margin-left: 3px;

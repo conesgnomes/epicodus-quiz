@@ -34,18 +34,28 @@ $(function() {
 
     if(question1 === "yes" || question3 === "ux") {
       $("#design").fadeIn(500);
+      $("img#design-symbol").fadeIn(500);
       $("#php").hide();
       $("#ruby").hide();
+      $("img#php-symbol").hide();
+      $("img#ruby-symbol").hide();
+
     }
     else if (question1 === "no" && (question3 === "content" || question3 === "ux")) {
       $("#design").hide();
       $("#php").fadeIn(500);
+      $("img#php-symbol").fadeIn(500);
       $("#ruby").hide();
+      $("img#ruby-symbol").hide();
+      $("img#design-symbol").hide();
     }
     else if (question1 === "no" && (question3 === "interactive" || question3 === "ux")) {
       $("#design").hide();
       $("#php").hide();
       $("#ruby").fadeIn(500);
+      $("img#ruby-symbol").fadeIn(500);
+      $("img#php-symbol").hide();
+      $("img#design-symbol").hide();
     }
 
     event.preventDefault();
